@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light dark;
+  --text: #202428;
+  --muted: #5a6068;
+  --link: #1a5fb4;
+  --background: #fbfaf7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6e1;
+    --muted: #a4a9b0;
+    --link: #8ab4f8;
+    --background: #1b1e22;
+  }
+}
+
+html {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 112.5%;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  padding: 3rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 36rem;
+  width: 100%;
+  flex: 1;
+}
+
+picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+}
+
+/* The logo carries the name on the page; the heading is for readers of the text alone. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+a {
+  color: var(--link);
+}
+
+footer {
+  max-width: 36rem;
+  margin: 2rem auto 0;
+  width: 100%;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
