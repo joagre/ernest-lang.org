@@ -11,4 +11,4 @@ The site at https://ernest-lang.org, one page: what Ernest is and where it is re
 
 The server is [ernest-httpd](https://github.com/joagre/ernest-httpd); its `deploy/README.md` says how the site is put on the machine: the files of `site/` copied under `/home/httpd/ernest-httpd/site/`.
 
-The page gets Ernest's live shell when Ernest's MVP 4.2 runs; the server's shell page then comes here.
+This page is served until the site generated in Ernest's repository, `make site` there, goes live with the shell page among its pages; then this repository goes.
